@@ -119,6 +119,7 @@ let alquiler = document.querySelector('#alquiler')
 let html = ''
 for (const propiedadAlquiler of propiedadesAlquiler) {
     if (propiedadAlquiler.id === 4 && alquiler.classList.contains("only3")) break
+    if(alquiler.classList.contains('noimprimir')) break
     html += `<div class="col-md-4 mb-4">
     <div class="card">
       <img
@@ -146,6 +147,7 @@ let venta = document.querySelector('#venta')
 let html2 = ''
 for (const propiedadVenta of propiedadesVenta) {
     if (propiedadVenta.id === 4 && venta.classList.contains("only3")) break
+    if(venta.classList.contains('noimprimir')) break
     html2 += `<div class="col-md-4 mb-4">
     <div class="card">
       <img
